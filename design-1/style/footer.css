@@ -1,0 +1,9 @@
+footer {
+    width: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid var(--yellow-color);
+}

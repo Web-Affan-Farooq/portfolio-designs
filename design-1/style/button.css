@@ -1,0 +1,16 @@
+button {
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+button:active {
+    transform: scale(0.7);
+}
+.btn-1 {
+ padding: 10px 20px;
+ border-radius: 10px;
+ border: none;   
+ background: var(--yellow-color);
+ color: black;
+ font-weight: bolder;
+ font-size: 1.1em;
+}

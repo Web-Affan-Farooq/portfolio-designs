@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/contact-page/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+    <main>
+        <article>
+            <section class="contact-section">
+                <h1>Contact <span class="highlight-2">me</span></h1>
+                <form action="submit.html">
+                    <fieldset>
+                        <legend>Your name</legend>
+                        <br>
+                        <label for="Your name">
+                            <input type="text" name="clientName" id="client-name" required placeholder="Enter your name">
+                        </label>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <legend>Your email</legend>
+                        <br>
+                        <label for="Your email">
+                            <input type="email" name="email" id="client-email" required placeholder="Enter your email">
+                        </label>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <br>
+                        <label for="Enter description of the project">
+                            <textarea name="projectDescription" id="project-description" required placeholder="Enter description of your project"></textarea>
+                        </label>
+                    </fieldset>
+                    <br><br>
+                    <button type="submit" class="submit-btn">Submit request</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.section-3 {
+    width: auto;
+    color: white;
+    padding: 30px;
+}
+
+.section-3>h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ratings {
+    border: 1px solid transparent;
+    border-left: 1px solid var(--yellow-color);
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    /* border-radius: 20px; */
+}

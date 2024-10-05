@@ -1,0 +1,39 @@
+.project-section {
+        width: auto;
+        height: 100vh;
+        /* padding: 200px 20px; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        color: white;
+        /* gap: 50px; */
+}
+.project-section > h1 {
+    font-size: 3rem;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+}
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    padding: 20px;
+    gap: 15px;
+}
+.project-card-1 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--yellow-color);
+}
+.project-card-1 > img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}

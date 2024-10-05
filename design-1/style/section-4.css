@@ -1,0 +1,37 @@
+.section-4 {
+    width: auto;
+    color: white;
+    padding: 30px;
+    background: transparent;
+}
+.section-4 >h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.reviews-container {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; /* Prevent line breaks for inline elements */
+    padding: 10px;
+}
+.reviews-container::-webkit-scrollbar {
+    padding: 4px;
+}
+.reviews-container::-webkit-scrollbar-track {
+    background: black;
+}
+.reviews-container::-webkit-scrollbar-thumb {
+    background: var(--yellow-color);
+    border-radius: 10px;
+}
+.customer {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+}
