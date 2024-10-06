@@ -17,8 +17,8 @@
 .s-2-content {
     width: 50%;
     padding: 20px;
-    border: 1px solid transparent;
-    border-top: 1px solid var(--yellow-color);
+    /* border: 1px solid transparent; */
+    /* border-top: 1px solid var(--yellow-color); */
     /* border-right: 1px solid var(--yellow-color); */
     /* border: 1px solid white; */
 }
@@ -45,7 +45,7 @@
     columns: 100px;
     justify-content: center;
     border: 1px solid transparent;
-    border-left: 1px solid var(--yellow-color);
+    /* border-left: 1px solid var(--yellow-color); */
 }
 
 .s-2-frame::-webkit-scrollbar {
@@ -87,15 +87,6 @@
         padding: 20px;
         overflow-x: hidden;
         overflow-y: auto;
-        /* border-radius: 20px; */
         columns: 100px;
-        /* display: grid;
-        grid-template-columns:repeat(4, 1fr); */
-        /* border: 1px solid white; */
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap; */
     }
 }

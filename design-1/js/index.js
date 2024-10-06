@@ -20,3 +20,6 @@ toogleButton.addEventListener("click", function showNav(event) {
         flag = !flag;
     }
 })
+
+let reviewsContainer = document.querySelector(".reviews-container");
+reviewsContainer.scrollTo(0, 300);

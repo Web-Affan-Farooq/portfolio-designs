@@ -8,6 +8,7 @@ header {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(90px);
     will-change: backdrop-filter;
+    z-index: 100;
     /* border: 1px solid white; */
 }
 .navbar {

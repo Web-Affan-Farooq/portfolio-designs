@@ -15,11 +15,11 @@
     background: transparent;
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap; /* Prevent line breaks for inline elements */
-    padding: 10px;
+    white-space: nowrap;
+    padding: 50px 10px;
 }
 .reviews-container::-webkit-scrollbar {
-    padding: 4px;
+    height: 8px;
 }
 .reviews-container::-webkit-scrollbar-track {
     background: black;
@@ -29,8 +29,10 @@
     border-radius: 10px;
 }
 .customer {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    padding: 30px 40px;
+    white-space:wrap;
+    /* height: 200px; */
     display: inline-block;
     border-radius: 10px;
     background: rgba(255,255,255,0.1);

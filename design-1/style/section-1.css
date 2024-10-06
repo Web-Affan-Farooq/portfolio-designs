@@ -1,18 +1,26 @@
 .section-1 {
     width: auto;
-    padding: 200px 20px;
+    padding: 150px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: white;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
 }
 
 .s-1-content {
-    width: 50%;
+    width: 40%;
     padding: 20px;
 }
 
+.section-1 > img {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+}
 .s-1-content>h1 {
     font-size: 3.3rem;
     color: white;
