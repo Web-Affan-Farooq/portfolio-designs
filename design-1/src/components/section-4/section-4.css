@@ -1,0 +1,11 @@
+
+.reviews-container::-webkit-scrollbar {
+    height: 8px;
+}
+.reviews-container::-webkit-scrollbar-track {
+    background: black;
+}
+.reviews-container::-webkit-scrollbar-thumb {
+    background: var(--yellow-color);
+    border-radius: 10px;
+}
