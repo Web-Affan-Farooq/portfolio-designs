@@ -1,5 +1,5 @@
 import React from 'react';
-import Allumini_card from '../Cards/Home/Section-4/allumini-card';
+import Allumini_card from './allumini-card';
 import "./section-4.css";
 
 const Section_4 = () => {

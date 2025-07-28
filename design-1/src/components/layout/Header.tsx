@@ -28,7 +28,7 @@ const Header = () => {
             <Link
               key={idx}
               href={opt.link}
-              className="text-white md:text-lg max-md:text-[16px] px-5 py-2 rounded-lg bg-white/10 backdrop-blur-md transition-all duration-300 hover:bg-white/20"
+              className="text-white md:text-lg max-md:text-[16px] px-5 py-2 rounded-lg hover:text-sharp-yellow font-semibold"
             >
               {opt.name}
             </Link>
@@ -45,7 +45,7 @@ const Header = () => {
         {/* Mobile Menu Icon */}
         <div
           id="menu-icon"
-          className="text-3xl text-pink-500 md:hidden absolute top-7 right-10 cursor-pointer z-10"
+          className="text-2xl text-pink-500 md:hidden absolute top-8 right-10 cursor-pointer z-10"
           onClick={handleNav}
         >
           {navStatus ? (
@@ -58,9 +58,8 @@ const Header = () => {
 
       {/* Mobile Menu (Sliding Effect) */}
       <div
-        className={`fixed top-0 right-0 w-full h-[60vh] bg-black/70 backdrop-blur-md flex flex-col justify-center items-center space-y-6 transform transition-transform duration-500 ${
-          navStatus ? "translate-y-0" : "-translate-y-full"
-        } md:hidden`}
+        className={`fixed top-0 right-0 w-full h-[60vh] bg-black/70 backdrop-blur-md flex flex-col justify-center items-center space-y-6 transform transition-transform duration-500 ${navStatus ? "translate-y-0" : "-translate-y-full"
+          } md:hidden`}
       >
         {[
           { name: "Home", link: "/" },
@@ -71,7 +70,7 @@ const Header = () => {
           <Link
             key={idx}
             href={opt.link}
-            className="text-[1rem] text-white px-[20px] py-[10px] rounded-[20px] bg-[rgba(255,255,255,0.1)] backdrop-blur-3xl transition-all duration-[0.9s] ease-in-out"
+            className="text-[1rem] text-white px-[20px] py-[10px] rounded-[20px] hover:text-sharp-yellow"
             onClick={() => setNavStatus(false)}
           >
             {opt.name}

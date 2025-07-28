@@ -1,52 +1,78 @@
 import React from 'react';
-import Yellow_button from '@/components/Buttons/Yellow_button';
+import {YellowButton} from '@/components/common';
 
 const Contact = () => {
     return (
-        <div>
-            <br />
-            <br />
-            <br />
+        <div className="py-20 bg-black overflow-x-hidden">
             <main>
                 <article>
-                    <section className="text-left p-[50px] h-auto overflow-x-hidden">
-                        <h1 className='text-white text-[3rem] font-bold text-center'>Contact <span className="text-fire">me</span></h1>
-                        <form action={"/submit"}>
-                            <fieldset className='border-none'>
-                                <legend className='rounded-[20px] bg-[var(--yellow-color)] text-[17px] font-bold px-[15px] py-[5px]'>Your name</legend>
-                                <br />
+                    <section className="max-w-3xl mx-auto px-6">
+                        <h1 className="text-4xl font-bold text-center mb-12">
+                            Contact <span className="text-fire">me</span>
+                        </h1>
 
-                                <label htmlFor="Your name">
-                                    <input type="text" name="clientName" id="client-name" required placeholder="Enter your name" className='px-[20px] py-[15px] w-[300px] text-fire bg-transparent border-b-[1px] border-solid border-fire'/>
-                                </label>
+                        <form action="/submit" className="space-y-10">
+                            {/* Name Field */}
+                            <fieldset className="border-none">
+                                <legend className="rounded-xl text-black bg-sharp-yellow text-[17px] font-bold px-4 py-1">
+                                    Your name
+                                </legend>
+                                <div className="mt-4">
+                                    <input
+                                        type="text"
+                                        name="clientName"
+                                        id="client-name"
+                                        required
+                                        placeholder="Enter your name"
+                                        className="w-full text-white max-w-md px-5 py-4 bg-transparent border-b border-fire text-fire placeholder:text-gray-400 focus:outline-none focus:border-sharp-yellow transition-all"
+                                    />
+                                </div>
                             </fieldset>
-                            <br /><br />
-                            <fieldset className='border-none'>
-                                <legend className='rounded-[20px] bg-[var(--yellow-color)] text-[17px] font-bold px-[15px] py-[5px]'>Your email</legend>
-                                <br />
-                                <label htmlFor="Your email">
-                                    <input type="email" name="email" id="client-email" required placeholder="Enter your email" className='px-[20px] py-[15px] w-[300px] text-fire bg-transparent border-b-[1px] border-solid border-fire'/>
-                                </label>
+
+                            {/* Email Field */}
+                            <fieldset className="border-none">
+                                <legend className="rounded-xl text-black bg-sharp-yellow text-[17px] font-bold px-4 py-1">
+                                    Your email
+                                </legend>
+                                <div className="mt-4">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="client-email"
+                                        required
+                                        placeholder="Enter your email"
+                                        className="w-full text-white max-w-md px-5 py-4 bg-transparent border-b border-fire text-fire placeholder:text-gray-400 focus:outline-none focus:border-sharp-yellow transition-all"
+                                    />
+                                </div>
                             </fieldset>
-                            <br /><br />
-                            <fieldset className='border-none'>
-                                <legend className='rounded-[20px] bg-[var(--yellow-color)] text-[17px] font-bold px-[15px] py-[5px]'>Description</legend>
-                                <br />
-                                <label htmlFor="Enter description of the project">
-                                    <textarea name="projectDescription" id="project-description" required placeholder="Enter description of your project" className='px-[20px] py-[15px] w-[300px] h-[200px] text-fire bg-transparent border-b-[1px] border-solid border-fire'></textarea>
-                                </label>
+
+                            {/* Project Description Field */}
+                            <fieldset className="border-none">
+                                <legend className="rounded-xl text-black bg-sharp-yellow text-[17px] font-bold px-4 py-1">
+                                    Project Description
+                                </legend>
+                                <div className="mt-4">
+                                    <textarea
+                                        name="projectDescription"
+                                        id="project-description"
+                                        required
+                                        placeholder="Describe your project"
+                                        className="w-full text-white max-w-md px-5 py-4 h-40 bg-transparent border-b border-fire text-fire placeholder:text-gray-400 resize-none focus:outline-none focus:border-sharp-yellow transition-all"
+                                    ></textarea>
+                                </div>
                             </fieldset>
-                            <br /><br />
-                            <Yellow_button type="submit" text='submit'/>
+
+                            {/* Submit Button */}
+                            <div className="flex justify-center ">
+                                <YellowButton type='submit' text='Submit'/>
+                                {/* <button type="submit" className={`p-[10px] rounded-[10px] bg-sharp-yellow text-black font-bold text-[1rem] m-auto`}>Submit</button>               */}
+                                 </div>
                         </form>
                     </section>
                 </article>
             </main>
-            <br />
-            <br />
-            <br />
         </div>
-    )
-}
+    );
+};
 
 export default Contact;
